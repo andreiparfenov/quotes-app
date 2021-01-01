@@ -26,10 +26,15 @@ class AddQuote extends React.Component {
           onChange={e => this.onChange(e.target.value)}
           value={this.state.quote}
         />
-        <button className="AddQuote" onClick={this.handleAddQuote}>
+        <button className="add-quote" onClick={this.handleAddQuote}>
           Add Quote
         </button>
       </div>
-    )
+    );
   }
 }
+
+export default connect(
+  null,
+  { addQuote }
+)(AddQuote);
