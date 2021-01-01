@@ -1,4 +1,4 @@
-import { ADD_QUOTE } from './actionTypes'
+import { ADD_QUOTE, TOGGLE_QUOTE, SET_FILTER } from './actionTypes'
 
 let nextQuoteId = 0
 export const addQuote = content => ({

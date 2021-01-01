@@ -3,7 +3,7 @@ import { VISIBILITY_FILTERS } from '../constants';
 export const getQuotesState = store => store.quotes;
 export const getQuotes = store => getQuotesState(store) ? getQuotesState(store).allIds : [];
 export const getQuoteById = (store, id) => getQuotesState(store) ? { ...getQuotesState(store).byIds[id], id } : {};
-export const getNewQuotes = store => getQuotes(store).map(id => qetQuoteById(store, id));
+export const getNewQuotes = store => getQuotes(store).map(id => getQuoteById(store, id));
 
 export const getQuotesByVisibilityFilter = (store, visibilityFilter) => {
   const allQuotes = getNewQuotes(store);

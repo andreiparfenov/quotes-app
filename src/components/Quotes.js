@@ -2,7 +2,6 @@ import React from "react";
 import { connect } from "react-redux";
 import Quote from "./Quote";
 import { getQuotesByVisibilityFilter } from "../redux/selectors";
-import { VISIBILITY_FILTERS } from "../constants";
 
 const Quotes = ({ quotes }) => (
   <ul className="quotes">

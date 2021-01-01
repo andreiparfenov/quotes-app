@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import AddQuote from "./components/AddQuote";
+import Quotes from "./components/Quotes";
+import VisibilityFilters from "./components/VisibilityFilters";
 
-function App() {
+export default function QuoteApp() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="quote-app">
+      <h1>Quote List</h1>
+      <AddQuote />
+      <Quotes />
+      <VisibilityFilters />
     </div>
   );
 }
-
-export default App;
