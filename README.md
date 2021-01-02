@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Quotes App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Тест-проект на React+Redux. Получает список цитат по API, выдаёт их список. Можно добавлять свои, лайкать чужие (и свои тоже) цитаты. Имеется фильтр для показа цитат: всех, понравившихся и не понравившихся. Стилей добавил минимально с помощью пре-процессора Sass.
 
 ## Available Scripts
 
