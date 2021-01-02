@@ -16,7 +16,7 @@ export default function types(state = initialState, action) {
           ...state.byIds,
           [id]: {
             content,
-            completed: false
+            liked: false
           }
         }
       };
@@ -29,7 +29,7 @@ export default function types(state = initialState, action) {
           ...state.byIds,
           [id]: {
             ...state.byIds[id],
-            completed: !state.byIds[id].completed
+            liked: !state.byIds[id].liked
           }
         }
       };
