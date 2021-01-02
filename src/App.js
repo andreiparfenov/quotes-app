@@ -8,8 +8,8 @@ export default function QuoteApp() {
     <div className="quote-app">
       <h1>Quote List</h1>
       <AddQuote />
-      <Quotes />
       <VisibilityFilters />
+      <Quotes />
     </div>
   );
 }

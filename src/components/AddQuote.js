@@ -21,12 +21,15 @@ class AddQuote extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="add-quote">
         <textarea
+          class="add-quote__field"
           onChange={e => this.onChange(e.target.value)}
           value={this.state.quote}
+          rows="4"
+          cols="50"
         />
-        <button className="add-quote" onClick={this.handleAddQuote}>
+        <button className="add-quote__button" onClick={this.handleAddQuote}>
           Add Quote
         </button>
       </div>
