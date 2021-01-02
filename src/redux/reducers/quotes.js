@@ -1,12 +1,18 @@
-import { ADD_QUOTE, TOGGLE_QUOTE } from '../actionTypes';
+import { ADD_QUOTE, TOGGLE_QUOTE, FETCH_QUOTES } from '../actionTypes';
 
 const initialState = {
+  quotes: [],
   allIds: [],
   byIds: {}
 };
 
 export default function types(state = initialState, action) {
   switch (action.type) {
+    case FETCH_QUOTES:
+      return {
+        ...state,
+        quotes: action.payload
+      }
     case ADD_QUOTE: {
       const { id, content } = action.payload;
       return {
@@ -38,3 +44,5 @@ export default function types(state = initialState, action) {
       return state;
   }
 }
+
+export const fetchQuotes = state => state.quotes;

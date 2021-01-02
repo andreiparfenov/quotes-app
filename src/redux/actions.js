@@ -1,4 +1,4 @@
-import { ADD_QUOTE, TOGGLE_QUOTE, SET_FILTER } from './actionTypes'
+import { ADD_QUOTE, TOGGLE_QUOTE, SET_FILTER, FETCH_QUOTES } from './actionTypes'
 
 let nextQuoteId = 0
 export const addQuote = content => ({
@@ -17,4 +17,9 @@ export const toggleQuote = id => ({
 export const setFilter = filter => ({
   type: SET_FILTER,
   payload: { filter }
+});
+
+export const fetchQuotes = (quotes) => ({
+  type: FETCH_QUOTES,
+  quotes: quotes
 });

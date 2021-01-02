@@ -23,7 +23,7 @@ class AddQuote extends React.Component {
     return (
       <div className="add-quote">
         <textarea
-          class="add-quote__field"
+          className="add-quote__field"
           onChange={e => this.onChange(e.target.value)}
           value={this.state.quote}
           rows="4"
